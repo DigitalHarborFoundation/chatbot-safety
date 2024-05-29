@@ -13,6 +13,7 @@ install:
 	@$(MAKE) ensure-poetry
 	@$(MAKE) install-precommits
 	@poetry build
+	@poetry run pip install --extra-index-url https://europe-west1-python.pkg.dev/rori-turn/rori-python-packages/simple/ rori-orm
 
 ensure-poetry:
 	@# see issue: https://stackoverflow.com/questions/77019756/make-not-finding-executable-added-to-path-in-makefile
