@@ -7,7 +7,7 @@ This repository contains analysis code, prompts, and figures for ["Safe Generati
 
 Citation:
 
->Zachary Levonian, Owen Henkel. [Safe Generative Chats in a WhatsApp Intelligent Tutoring System]((https://arxiv.org/abs/2407.04915)). _ Educational Data Mining (EDM) Workshop: Leveraging Large Language Models for Next Generation Educational Technologies_. 2024.
+>Zachary Levonian, Owen Henkel. [Safe Generative Chats in a WhatsApp Intelligent Tutoring System]((https://arxiv.org/abs/2407.04915)). _Educational Data Mining (EDM) Workshop: Leveraging Large Language Models for Next Generation Educational Technologies_. 2024.
 
 ## Development
 
