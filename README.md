@@ -1,6 +1,13 @@
 # Chatbot safety analysis
 
-This repository contains analysis code, prompts, and figures for an in-submission paper.
+[![arXiv](https://img.shields.io/badge/arXiv-2407.04915-b31b1b.svg)](https://arxiv.org/abs/2407.04915)
+[![License](https://img.shields.io/github/license/DigitalHarborFoundation/chatbot-safety)](https://github.com/DigitalHarborFoundation/chatbot-safety/blob/main/LICENSE)
+
+This repository contains analysis code, prompts, and figures for ["Safe Generative Chats in a WhatsApp Intelligent Tutoring System"](https://arxiv.org/abs/2407.04915).
+
+Citation:
+
+>Zachary Levonian, Owen Henkel. [Safe Generative Chats in a WhatsApp Intelligent Tutoring System]((https://arxiv.org/abs/2407.04915)). _ Educational Data Mining (EDM) Workshop: Leveraging Large Language Models for Next Generation Educational Technologies_. 2024.
 
 ## Development
 
