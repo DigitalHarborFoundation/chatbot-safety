@@ -1,9 +1,17 @@
-# Chatbot safety analysis
+# Chatbot safety: designing safe tutoring systems
 
 [![arXiv](https://img.shields.io/badge/arXiv-2407.04915-b31b1b.svg)](https://arxiv.org/abs/2407.04915)
 [![License](https://img.shields.io/github/license/DigitalHarborFoundation/chatbot-safety)](https://github.com/DigitalHarborFoundation/chatbot-safety/blob/main/LICENSE)
 
-This repository contains analysis code and figures for ["Safe Generative Chats in a WhatsApp Intelligent Tutoring System"](https://arxiv.org/abs/2407.04915). In addition, a reference moderation system using OpenAI's Moderation API is provided in `src/student_guardrails`.
+This repository contains analysis code and figures for the research paper ["Safe Generative Chats in a WhatsApp Intelligent Tutoring System"](https://arxiv.org/abs/2407.04915).
+
+In addition, we include a reference moderation system using OpenAI's Moderation API in `src/student_guardrails`.
+This system is usable as-is, but should mostly be useful as a reference. Features:
+ - OpenAI Moderation API interface appropriate for both human-written and LLM-generated messages, including custom, per-category moderation thresholds.
+ - Banned word lists that supercede OpenAI moderation scores.
+ - Email alerting system using [SendGrid](https://github.com/sendgrid/sendgrid-python) for messages in particular categories.
+ - Pre-written moderation responses designed for users of the WhatsApp-based chatbot [Rori](https://rori.ai).
+ - Unit tests that provide mocked interfaces to the OpenAI Moderation API and the SendGrid API.
 
 If this work is useful to you in any way, please cite the corresponding paper:
 
