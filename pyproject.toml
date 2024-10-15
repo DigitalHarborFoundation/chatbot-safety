@@ -1,14 +1,13 @@
 [tool.poetry]
 name = "chatbot-safety"
-version = "0.0.1"
+version = "0.1.0"
 description = "Experimentation/analysis code and scripts"
 authors = [
     "Zachary Levonian <zach@levi.digitalharbor.org>"
 ]
 license = "MIT"
 readme = "README.md"
-packages = []
-package-mode = false
+packages = [{include = "student_guardrails", from = "src"}]
 repository = "https://github.com/DigitalHarborFoundation/chatbot-safety.git"
 
 [tool.poetry.dependencies]
@@ -22,6 +21,9 @@ pandas = "^2.2.1"
 matplotlib = "^3.8.3"
 keyrings-google-artifactregistry-auth = "^1.1.2"
 statsmodels = "^0.14.2"
+sendgrid = "^6.11.0"
+tenacity = "^9.0.0"
+openai = "^1.51.2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
@@ -31,11 +33,6 @@ nbqa = "^1.6.0"
 pre-commit = "^2.21.0"
 pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
-
-[[tool.poetry.source]]
-name = "rori-python-packages"
-url = "https://europe-west1-python.pkg.dev/rori-turn/rori-python-packages/simple/"
-priority = "supplemental"
 
 [build-system]
 requires = ["poetry-core"]
@@ -68,7 +65,7 @@ exclude = '''
 
 [tool.isort]
 profile = "black"
-line_length = 79
+line_length = 159
 multi_line_output = 3
 include_trailing_comma = true
 virtual_env = "venv"

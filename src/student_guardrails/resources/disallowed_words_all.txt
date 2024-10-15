@@ -1,0 +1,4 @@
+// this is just a reference implementation; the full wordlists we use are adaptations of existing open word lists.
+// but in general, I don't recommend using a word list heavily; we have very few words on the Rori wordlist.
+~specialDisallowedAllWord~
+fuck
