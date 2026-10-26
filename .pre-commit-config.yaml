@@ -1,31 +1,29 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v6.0.0
     hooks:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-yaml
 -   repo: https://github.com/pycqa/isort
-    rev: 5.13.2
+    rev: 10.0.0b1
     hooks:
     -   id: isort
 -   repo: https://github.com/asottile/add-trailing-comma
-    rev: v3.1.0
+    rev: v4.0.0
     hooks:
     -   id: add-trailing-comma
-        args: [--py36-plus]
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.18.0
+    rev: v3.22.0
     hooks:
     -   id: pyupgrade
         args: [--py37-plus]
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 24.10.0
+    rev: 26.10.1
     hooks:
     -   id: black
-        language_version: python3.9
 -   repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.8.7
+    rev: 1.9.1
     hooks:
     -   id: nbqa-black
     -   id: nbqa-pyupgrade

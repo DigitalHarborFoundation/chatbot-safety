@@ -1,10 +1,6 @@
-.PHONY: help install ensure-poetry install-precommits test run-streamlit build-docker run-docker remove-docker
+.PHONY: help install ensure-poetry install-precommits jupyter test
 
 export PATH := $(HOME)/.local/bin:$(PATH)
-
-tt:
-	@which poetry
-	@poetry install
 
 help:
 	@echo "Relevant targets are 'install' and 'test'."
@@ -12,8 +8,6 @@ help:
 install:
 	@$(MAKE) ensure-poetry
 	@$(MAKE) install-precommits
-	@poetry build
-	@poetry run pip install --extra-index-url https://europe-west1-python.pkg.dev/rori-turn/rori-python-packages/simple/ rori-orm
 
 ensure-poetry:
 	@# see issue: https://stackoverflow.com/questions/77019756/make-not-finding-executable-added-to-path-in-makefile
@@ -25,7 +19,6 @@ ensure-poetry:
 	@poetry install
 
 install-precommits:
-	@poetry run pre-commit autoupdate
 	@poetry run pre-commit install --overwrite --install-hooks
 
 jupyter:
