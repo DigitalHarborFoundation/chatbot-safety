@@ -18,11 +18,11 @@ numpy = "^2.5.4"
 scipy = "^1.18.1"
 pandas = "^3.1.0"
 matplotlib = "^3.11.2"
-keyrings-google-artifactregistry-auth = "^1.1.2"
 statsmodels = "^0.15.0"
 sendgrid = "^6.12.5"
 tenacity = "^9.2.1"
 openai = "^3.38.0"
+python-dotenv = "^1.2.4"
 
 [tool.poetry.group.dev.dependencies]
 black = "^26.10.1"

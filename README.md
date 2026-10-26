@@ -3,6 +3,9 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2407.04915-b31b1b.svg)](https://arxiv.org/abs/2407.04915)
 [![License](https://img.shields.io/github/license/DigitalHarborFoundation/chatbot-safety)](https://github.com/DigitalHarborFoundation/chatbot-safety/blob/main/LICENSE)
 
+> [!NOTE]
+> This repository was archived in October 2026 and is no longer maintained.
+
 This repository contains analysis code and figures for the research paper ["Safe Generative Chats in a WhatsApp Intelligent Tutoring System"](https://arxiv.org/abs/2407.04915).
 
 In addition, we include a reference moderation system using OpenAI's Moderation API in `src/student_guardrails`.
@@ -15,7 +18,19 @@ This system is usable as-is, but should mostly be useful as a reference. Feature
 
 If this work is useful to you in any way, please cite the corresponding paper:
 
->Zachary Levonian, Owen Henkel. [Safe Generative Chats in a WhatsApp Intelligent Tutoring System]((https://arxiv.org/abs/2407.04915)). _Educational Data Mining (EDM) Workshop: Leveraging Large Language Models for Next Generation Educational Technologies_. 2024.
+>Zachary Levonian, Owen Henkel. [Safe Generative Chats in a WhatsApp Intelligent Tutoring System](https://arxiv.org/abs/2407.04915). _Educational Data Mining (EDM) Workshop: Leveraging Large Language Models for Next Generation Educational Technologies_. 2024.
+
+```bibtex
+@inproceedings{levonian2024safe,
+  title     = {Safe Generative Chats in a {WhatsApp} Intelligent Tutoring System},
+  author    = {Levonian, Zachary and Henkel, Owen},
+  booktitle = {Educational Data Mining (EDM) Workshop: Leveraging Large Language Models for Next Generation Educational Technologies},
+  year      = {2024},
+  eprint    = {2407.04915},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2407.04915}
+}
+```
 
 ## Development
 
@@ -52,6 +67,8 @@ make jupyter
 ```
 
 Which really just runs `poetry run jupyter lab`, so feel free to customize your Jupyter experience.
+
+Note: `notebooks/AnalyzeStudentUsage.ipynb` depends on private Rori data and the internal `rori-orm` package, so it can't be re-run outside of Rori. It's included for reference, with outputs preserved.
 
 ### Other useful commands
 
