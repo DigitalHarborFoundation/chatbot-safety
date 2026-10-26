@@ -36,7 +36,7 @@ If this work is useful to you in any way, please cite the journal paper:
 }
 ```
 
-The earlier workshop paper:
+The original workshop paper:
 
 >Zachary Levonian, Owen Henkel. [Safe Generative Chats in a WhatsApp Intelligent Tutoring System](https://arxiv.org/abs/2407.04915). _Educational Data Mining (EDM) Workshop: Leveraging Large Language Models for Next Generation Educational Technologies_. 2024.
 
